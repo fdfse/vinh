@@ -17,12 +17,11 @@ private:
     string toAccountID;
 
 public:
-    Transaction(); // Constructor mặc định
+    Transaction(); 
     Transaction(const string& transID, const string& type, double amount,
                 const string& timeStamp, const string& note,
                 const string& fromID, const string& toID);
 
-    // Getter
     string getTransactionID() const;
     string getType() const;
     double getAmount() const;
